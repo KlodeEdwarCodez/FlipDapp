@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body  {
+            background-image: url('bitcoinflip.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+    }
+
+
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>FlipDapp</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid"  style="background-color:#393d48">
+
+
+      <div class="container text-white">
+        <h1 class="display-4">Flip A Crypto</h1>
+        <p class="lead">Flip a coin and double your money! </p>
+      </div>
+    </div>
+    <div class="container text-white">
+      <div>
+        <h3>Place your wager</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="wager" maxlength="4" size="4" placeholder="Name">
+        <button type="button" id="get_wager" class="btn btn-primary">My Wager</button>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="choices" id="1" value="heads" checked = "checked">
+          <label class="form-check-label" for="heads">
+            HEADS
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="choices" id="2" value="tail">
+          <label class="form-check-label" for="tail">
+            TAIL
+          </label>
+        </div>
+
+        <button type="button" id="coinFlip" class="btn btn-primary">Flip a Coin</button>
+      </div>
+      <div>
+        <h3>WIN OR LOSE</h3>
+        <div>
+      <h2> $$$: <span id="result_output"></span></h2>
+      <h2>      <span id="result_output2"></span></h2>
+      <h2>      <span id="result_output3"></span></h2>
+        </div>
+        <button type="button" id="withdraw" class="btn btn-primary">Withdraw Earnings</button>
+      </div>
+    </div>
+
+
+  </body>
+</html>
